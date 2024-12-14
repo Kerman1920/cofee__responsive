@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 1200px;
+    margin: 50px auto;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      width: 90%;
+    }
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar__logo {
+    width: 220px;
+  }
+  .navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .navbar__link {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+  }
+  .navbar__link:hover {
+    /* ABOUT US */
+    transition: all 0.3s linear;
+    color: #333d4b;
+  }
+  .navbar__burger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+  }
+  .navbar__hr {
+    width: 25px;
+    border: none;
+    border: 1.3px solid;
+    border-radius: 10px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .navbar__list {
+      display: none;
+    }
+    .navbar__burger {
+      display: flex;
+    }
+  }
+  .intro {
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/Bitmap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 20px;
+  }
+  .intro__title {
+    /* Great coffee made si */
+    width: 550px;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    /* or 100% */
+    color: #fefcf7;
+  }
+  .intro__text {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    color: #fefcf7;
+    margin: 20px 0;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 500px;
+  }
+  .intro__btn {
+    /* Group 3 */
+    width: 217px;
+    height: 56px;
+    border-radius: 6px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+    text-align: center;
+    background: #0e8784;
+    color: whitesmoke;
+    border: none;
+  }
+  .intro__btn:hover {
+    background-color: #66d2cf;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 480px) {
+    .intro {
+      border: 1px solid;
+      padding: 15px;
+    }
+    .intro__title {
+      /* Great coffee made si */
+      width: 100%;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 40px;
+      /* or 100% */
+      text-align: center;
+      color: #fefcf7;
+      margin: 20px auto;
+    }
+    .intro__text {
+      width: 100%;
+      text-align: center;
+      margin: 20px auto;
+    }
+    .intro__btn {
+      margin: auto;
+      display: block;
+    }
+  }
+  .choose {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+    background-color: #2c343e;
+    border-radius: 10px;
+  }
+  .choose__title {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: "Fraunces";
+  }
+  .choose__text {
+    text-align: center;
+    width: 500px;
+    margin: 20px auto;
+    color: white;
+    font-family: "Barlow";
+  }
+  .choose__cards {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .choose__card {
+    width: 300px;
+    height: 350px;
+    background-color: #119884;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .choose__subtitle {
+    /* Best quality */
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    color: #fefcf7;
+  }
+  .choose__subtext {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    text-align: center;
+    color: #fefcf7;
+  }
+  
+  @media (max-width: 480px) {
+    .choose {
+      padding: 20px;
+      height: 800px;
+    }
+    .choose__title {
+      font-size: 30px;
+    }
+    .choose__text {
+      width: 100%;
+      text-align: center;
+    }
+    .choose__cards {
+      flex-direction: column;
+      left: 0;
+      top: 300px;
+    }
+    .choose__card {
+      width: 85%;
+    }
+  }

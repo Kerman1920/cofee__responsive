@@ -1,0 +1,7 @@
+.navbar {
+    @include Display();
+  
+    &__logo {
+      width: 220px;
+    }
+}
